@@ -10,6 +10,7 @@ jobs:
           BUNDLE_RETRY: 3
           BUNDLE_PATH: vendor/bundle
           PGHOST: 127.0.0.1
+          PGUSER: root
           RAILS_ENV: test
       - image: circleci/postgres:9.6.9-alpine-postgis-ram
         environment:
