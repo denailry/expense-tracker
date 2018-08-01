@@ -81,5 +81,5 @@ test:
 production:
   <<: *default
   database: expense_tracker_production
-  username: denailry
+  username: <%= ENV['EXPENSE_TRACKER_DATABASE_USERNAME'] %>
   password: <%= ENV['EXPENSE_TRACKER_DATABASE_PASSWORD'] %>
